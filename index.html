@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+</head>
+<body>
+
+<h1>Input Example</h1>
+<form id="nameForm">
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Your name here" required>
+    <button type="submit">Submit</button>
+</form>
+
+<h2 id="greeting"></h2>
+
+<script>
+    // Get a reference to the form and the greeting element
+    const form = document.getElementById('nameForm');
+    const greetingElement = document.getElementById('greeting');
+
+    // Add an event listener for the form's submit event
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get the input value
+        const nameInput = document.getElementById('nameInput').value;
+
+        // Set the greeting message
+        greetingElement.textContent = `Hello, ${nameInput}! Welcome!`;
+    });
+</script>
+
+</body>
+</html>
