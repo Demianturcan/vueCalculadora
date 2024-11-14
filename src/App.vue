@@ -1,23 +1,36 @@
+
 <template>
   <div id="app">
-    <LandingPage />
+    <Navbar />
+
   </div>
+  <main>
+  <router-view></router-view>
+  </main>
+  <Footer />
 </template>
 
 <script>
-// import Calculator from './components/CalculadoraM.vue';
-import LandingPage from './components/LandingPage.vue';
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: 'App',
   components: {
-    LandingPage,
+    Navbar,
+    Footer,
   },
 };
 </script>
 
+
 <style>
 #app {
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
 }
+* {
+  margin:0;
+}
+
 </style>
