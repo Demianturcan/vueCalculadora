@@ -20,6 +20,6 @@ export default defineConfig({
             'src/tests/**/*.test.js' //cerca tests carpeta
         ]
     },
-    
+
 
 })
