@@ -20,11 +20,6 @@ export default defineConfig({
             'src/tests/**/*.test.js' //cerca tests carpeta
         ]
     },
-
-    server: {
-        host: '0.0.0.0',
-        port: 8000,
-        strictPort: true,
-    },
+    
 
 })
